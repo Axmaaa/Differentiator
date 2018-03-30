@@ -1,0 +1,22 @@
+\documentclass[12pt]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,russian]{babel}
+\pagestyle{empty}
+\usepackage{amsmath}
+
+\begin{document}
+  $$x + a - 5 \cdot x$$
+После упрощения получаем
+    $$x + a - 5 \cdot x$$
+По правилу производной разности $\left(f - g\right)' = f' - g'$, где $f = x + a$, а $g = 5 \cdot x$\\
+Продифференцируем $x + a$:\\По правилу производной суммы $\left(f + g\right)' = f' + g'$, где $f = x$, а $g = a$\\
+Продифференцируем $x$:\\x - главная переменная\\$\left(x\right)' = 1$\\
+Теперь продифференцируем $a$:\\a - не главная переменная\\$\left(a\right)' = 0$\\$\left(x + a\right)' = 1 + 0$\\
+Теперь продифференцируем $5 \cdot x$:\\По правилу производной произведения $\left(f * g\right)' = f' * g + f * g'$, где $f = 5$, а $g = x$\\
+Продифференцируем $5$:\\Производная числа всегда равна нулю\\$\left(5\right)' = 0$\\
+Теперь продифференцируем $x$:\\x - главная переменная\\$\left(x\right)' = 1$\\$\left(5 \cdot x\right)' = 0 \cdot x + 5 \cdot 1$\\Итак, производная равна
+    $$1 + 0 - \left(0 \cdot x + 5 \cdot 1\right)$$
+После упрощения получаем
+    $$-4$$
+\end{document}

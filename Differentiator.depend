@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1522415090 source:/home/axma/Programming C/Differentiator/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<locale.h>
+

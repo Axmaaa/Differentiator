@@ -1,0 +1,13 @@
+digraph dump {
+ node [shape = record];
+94417526920112 [shape = record, label = "{ptr: 0x55df4b2713b0|type: 3|value: 2|left: 0x55df4b2712b0|right: 0x55df4b271390}"];94417526920112 -> 94417526919856
+94417526919856 [shape = record, label = "{ptr: 0x55df4b2712b0|type: 3|value: 1|left: 0x55df4b271270|right: 0x55df4b271290}"];94417526919856 -> 94417526919792
+94417526919792 [shape = record, label = "{ptr: 0x55df4b271270|type: 1|value: 1|left: (nil)|right: (nil)}"];94417526919856 -> 94417526919824
+94417526919824 [shape = record, label = "{ptr: 0x55df4b271290|type: 1|value: 0|left: (nil)|right: (nil)}"];94417526920112 -> 94417526920080
+94417526920080 [shape = record, label = "{ptr: 0x55df4b271390|type: 3|value: 1|left: 0x55df4b271370|right: 0x55df4b271350}"];94417526920080 -> 94417526920048
+94417526920048 [shape = record, label = "{ptr: 0x55df4b271370|type: 3|value: 3|left: 0x55df4b271310|right: 0x55df4b2712f0}"];94417526920048 -> 94417526919952
+94417526919952 [shape = record, label = "{ptr: 0x55df4b271310|type: 1|value: 0|left: (nil)|right: (nil)}"];94417526920048 -> 94417526919920
+94417526919920 [shape = record, label = "{ptr: 0x55df4b2712f0|type: 2|value: x|left: (nil)|right: (nil)}"];94417526920080 -> 94417526920016
+94417526920016 [shape = record, label = "{ptr: 0x55df4b271350|type: 3|value: 3|left: 0x55df4b2712d0|right: 0x55df4b271330}"];94417526920016 -> 94417526919888
+94417526919888 [shape = record, label = "{ptr: 0x55df4b2712d0|type: 1|value: 5|left: (nil)|right: (nil)}"];94417526920016 -> 94417526919984
+94417526919984 [shape = record, label = "{ptr: 0x55df4b271330|type: 1|value: 1|left: (nil)|right: (nil)}"];}
