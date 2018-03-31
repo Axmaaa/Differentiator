@@ -31,6 +31,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="RDP.h" />
+		<Unit filename="TreeFunc.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

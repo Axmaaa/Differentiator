@@ -1,8 +1,14 @@
 # depslib dependency file v1.0
-1522415090 source:/home/axma/Programming C/Differentiator/main.c
+1522527102 source:/home/axma/Programming C/Differentiator/main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<math.h>
 	<locale.h>
+	"TreeFunc.h"
+	"RDP.h"
+
+1522529631 /home/axma/Programming C/Differentiator/TreeFunc.h
+
+1522526846 /home/axma/Programming C/Differentiator/RDP.h
 

@@ -1,13 +1,45 @@
 digraph dump {
  node [shape = record];
-94417526920112 [shape = record, label = "{ptr: 0x55df4b2713b0|type: 3|value: 2|left: 0x55df4b2712b0|right: 0x55df4b271390}"];94417526920112 -> 94417526919856
-94417526919856 [shape = record, label = "{ptr: 0x55df4b2712b0|type: 3|value: 1|left: 0x55df4b271270|right: 0x55df4b271290}"];94417526919856 -> 94417526919792
-94417526919792 [shape = record, label = "{ptr: 0x55df4b271270|type: 1|value: 1|left: (nil)|right: (nil)}"];94417526919856 -> 94417526919824
-94417526919824 [shape = record, label = "{ptr: 0x55df4b271290|type: 1|value: 0|left: (nil)|right: (nil)}"];94417526920112 -> 94417526920080
-94417526920080 [shape = record, label = "{ptr: 0x55df4b271390|type: 3|value: 1|left: 0x55df4b271370|right: 0x55df4b271350}"];94417526920080 -> 94417526920048
-94417526920048 [shape = record, label = "{ptr: 0x55df4b271370|type: 3|value: 3|left: 0x55df4b271310|right: 0x55df4b2712f0}"];94417526920048 -> 94417526919952
-94417526919952 [shape = record, label = "{ptr: 0x55df4b271310|type: 1|value: 0|left: (nil)|right: (nil)}"];94417526920048 -> 94417526919920
-94417526919920 [shape = record, label = "{ptr: 0x55df4b2712f0|type: 2|value: x|left: (nil)|right: (nil)}"];94417526920080 -> 94417526920016
-94417526920016 [shape = record, label = "{ptr: 0x55df4b271350|type: 3|value: 3|left: 0x55df4b2712d0|right: 0x55df4b271330}"];94417526920016 -> 94417526919888
-94417526919888 [shape = record, label = "{ptr: 0x55df4b2712d0|type: 1|value: 5|left: (nil)|right: (nil)}"];94417526920016 -> 94417526919984
-94417526919984 [shape = record, label = "{ptr: 0x55df4b271330|type: 1|value: 1|left: (nil)|right: (nil)}"];}
+93825697627376 [shape = record, label = "{ptr: 0x55557f60bcf0|type: 3|value: 3|left: 0x55557f60bcd0|right: 0x55557f60bc90}"];93825697627376 -> 93825697627344
+93825697627344 [shape = record, label = "{ptr: 0x55557f60bcd0|type: 3|value: 6|left: 0x55557f60b7b0|right: 0x55557f60bcb0}"];93825697627344 -> 93825697626032
+93825697626032 [shape = record, label = "{ptr: 0x55557f60b7b0|type: 2|value: e|left: (nil)|right: (nil)}"];93825697627344 -> 93825697627312
+93825697627312 [shape = record, label = "{ptr: 0x55557f60bcb0|type: 3|value: 3|left: 0x55557f60b8b0|right: 0x55557f60b7f0}"];93825697627312 -> 93825697626288
+93825697626288 [shape = record, label = "{ptr: 0x55557f60b8b0|type: 3|value: 6|left: 0x55557f60b8d0|right: 0x55557f60b8f0}"];93825697626288 -> 93825697626320
+93825697626320 [shape = record, label = "{ptr: 0x55557f60b8d0|type: 2|value: x|left: (nil)|right: (nil)}"];93825697626288 -> 93825697626352
+93825697626352 [shape = record, label = "{ptr: 0x55557f60b8f0|type: 3|value: 5|left: (nil)|right: 0x55557f60b910}"];93825697626352 -> 93825697626384
+93825697626384 [shape = record, label = "{ptr: 0x55557f60b910|type: 2|value: x|left: (nil)|right: (nil)}"];93825697627312 -> 93825697626096
+93825697626096 [shape = record, label = "{ptr: 0x55557f60b7f0|type: 3|value: 5|left: (nil)|right: 0x55557f60b7d0}"];93825697626096 -> 93825697626064
+93825697626064 [shape = record, label = "{ptr: 0x55557f60b7d0|type: 2|value: x|left: (nil)|right: (nil)}"];93825697627376 -> 93825697627280
+93825697627280 [shape = record, label = "{ptr: 0x55557f60bc90|type: 3|value: 1|left: 0x55557f60bc70|right: 0x55557f60bc50}"];93825697627280 -> 93825697627248
+93825697627248 [shape = record, label = "{ptr: 0x55557f60bc70|type: 3|value: 3|left: 0x55557f60bc30|right: 0x55557f60b870}"];93825697627248 -> 93825697627184
+93825697627184 [shape = record, label = "{ptr: 0x55557f60bc30|type: 3|value: 3|left: 0x55557f60bc10|right: 0x55557f60bbd0}"];93825697627184 -> 93825697627152
+93825697627152 [shape = record, label = "{ptr: 0x55557f60bc10|type: 3|value: 6|left: 0x55557f60b9b0|right: 0x55557f60bbf0}"];93825697627152 -> 93825697626544
+93825697626544 [shape = record, label = "{ptr: 0x55557f60b9b0|type: 2|value: e|left: (nil)|right: (nil)}"];93825697627152 -> 93825697627120
+93825697627120 [shape = record, label = "{ptr: 0x55557f60bbf0|type: 3|value: 3|left: 0x55557f60bab0|right: 0x55557f60b9f0}"];93825697627120 -> 93825697626800
+93825697626800 [shape = record, label = "{ptr: 0x55557f60bab0|type: 3|value: 5|left: (nil)|right: 0x55557f60bad0}"];93825697626800 -> 93825697626832
+93825697626832 [shape = record, label = "{ptr: 0x55557f60bad0|type: 2|value: x|left: (nil)|right: (nil)}"];93825697627120 -> 93825697626608
+93825697626608 [shape = record, label = "{ptr: 0x55557f60b9f0|type: 3|value: 5|left: (nil)|right: 0x55557f60b9d0}"];93825697626608 -> 93825697626576
+93825697626576 [shape = record, label = "{ptr: 0x55557f60b9d0|type: 2|value: x|left: (nil)|right: (nil)}"];93825697627184 -> 93825697627088
+93825697627088 [shape = record, label = "{ptr: 0x55557f60bbd0|type: 3|value: 1|left: 0x55557f60bbb0|right: 0x55557f60bb90}"];93825697627088 -> 93825697627056
+93825697627056 [shape = record, label = "{ptr: 0x55557f60bbb0|type: 3|value: 3|left: 0x55557f60bb70|right: 0x55557f60ba70}"];93825697627056 -> 93825697626992
+93825697626992 [shape = record, label = "{ptr: 0x55557f60bb70|type: 3|value: 4|left: 0x55557f60bb50|right: 0x55557f60bb30}"];93825697626992 -> 93825697626960
+93825697626960 [shape = record, label = "{ptr: 0x55557f60bb50|type: 1|value: 1|left: (nil)|right: (nil)}"];93825697626992 -> 93825697626928
+93825697626928 [shape = record, label = "{ptr: 0x55557f60bb30|type: 2|value: x|left: (nil)|right: (nil)}"];93825697627056 -> 93825697626736
+93825697626736 [shape = record, label = "{ptr: 0x55557f60ba70|type: 3|value: 5|left: (nil)|right: 0x55557f60ba90}"];93825697626736 -> 93825697626768
+93825697626768 [shape = record, label = "{ptr: 0x55557f60ba90|type: 2|value: x|left: (nil)|right: (nil)}"];93825697627088 -> 93825697627024
+93825697627024 [shape = record, label = "{ptr: 0x55557f60bb90|type: 3|value: 3|left: 0x55557f60baf0|right: 0x55557f60ba50}"];93825697627024 -> 93825697626864
+93825697626864 [shape = record, label = "{ptr: 0x55557f60baf0|type: 3|value: 5|left: (nil)|right: 0x55557f60bb10}"];93825697626864 -> 93825697626896
+93825697626896 [shape = record, label = "{ptr: 0x55557f60bb10|type: 2|value: x|left: (nil)|right: (nil)}"];93825697627024 -> 93825697626704
+93825697626704 [shape = record, label = "{ptr: 0x55557f60ba50|type: 3|value: 4|left: 0x55557f60ba30|right: 0x55557f60ba10}"];93825697626704 -> 93825697626672
+93825697626672 [shape = record, label = "{ptr: 0x55557f60ba30|type: 1|value: 1|left: (nil)|right: (nil)}"];93825697626704 -> 93825697626640
+93825697626640 [shape = record, label = "{ptr: 0x55557f60ba10|type: 2|value: x|left: (nil)|right: (nil)}"];93825697627248 -> 93825697626224
+93825697626224 [shape = record, label = "{ptr: 0x55557f60b870|type: 3|value: 5|left: (nil)|right: 0x55557f60b890}"];93825697626224 -> 93825697626256
+93825697626256 [shape = record, label = "{ptr: 0x55557f60b890|type: 2|value: x|left: (nil)|right: (nil)}"];93825697627280 -> 93825697627216
+93825697627216 [shape = record, label = "{ptr: 0x55557f60bc50|type: 3|value: 3|left: 0x55557f60b930|right: 0x55557f60b850}"];93825697627216 -> 93825697626416
+93825697626416 [shape = record, label = "{ptr: 0x55557f60b930|type: 3|value: 6|left: 0x55557f60b950|right: 0x55557f60b970}"];93825697626416 -> 93825697626448
+93825697626448 [shape = record, label = "{ptr: 0x55557f60b950|type: 2|value: x|left: (nil)|right: (nil)}"];93825697626416 -> 93825697626480
+93825697626480 [shape = record, label = "{ptr: 0x55557f60b970|type: 3|value: 5|left: (nil)|right: 0x55557f60b990}"];93825697626480 -> 93825697626512
+93825697626512 [shape = record, label = "{ptr: 0x55557f60b990|type: 2|value: x|left: (nil)|right: (nil)}"];93825697627216 -> 93825697626192
+93825697626192 [shape = record, label = "{ptr: 0x55557f60b850|type: 3|value: 4|left: 0x55557f60b830|right: 0x55557f60b810}"];93825697626192 -> 93825697626160
+93825697626160 [shape = record, label = "{ptr: 0x55557f60b830|type: 1|value: 1|left: (nil)|right: (nil)}"];93825697626192 -> 93825697626128
+93825697626128 [shape = record, label = "{ptr: 0x55557f60b810|type: 2|value: x|left: (nil)|right: (nil)}"];}
