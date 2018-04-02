@@ -1,3 +1,4 @@
+#define printf //printf
 struct Node * GetG0();
 struct Node * GetN();
 struct Node * GetV();
@@ -269,3 +270,4 @@ int IsLetter(char c)
     else
         return 0;
 }
+#undef printf

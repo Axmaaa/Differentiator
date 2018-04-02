@@ -665,10 +665,11 @@ void TreeSimplification(struct Node * n, int * pcount)
             n->right = NULL;
             (*pcount) += 1;
         }
-        else if (n->left->type == NUMBER && n->right->type == NUMBER && (GCD(n->left->value, n->right->value != 1)))
+        else if (n->left->type == NUMBER && n->right->type == NUMBER && (GCD(n->left->value, n->right->value) != 1))
         {
-            n->left->value /= GCD(n->left->value, n->right->value != 1);
-            n->right->value /= GCD(n->left->value, n->right->value != 1);
+            int gcd = GCD(n->left->value, n->right->value);
+            n->left->value /= gcd;
+            n->right->value /= gcd;
             (*pcount) += 1;
         }
         else if (n->left->type == NUMBER && n->left->value == 0)
@@ -704,7 +705,19 @@ void TreeSimplification(struct Node * n, int * pcount)
     }
     else if (n->type == OPERATOR && n->value == EXPONENT)
     {
-        if (n->left->type == NUMBER && n->right->type == NUMBER && (n->left->value != 0 || n->right->value != 0))
+        if (n->left->type == OPERATOR && n->left->value == EXPONENT)
+        {
+            struct Node * tmp1, * tmp2;
+            tmp = TreeCopy(n->left->left);
+            tmp1 = TreeCopy(n->left->right);
+            tmp2 = TreeCopy(n->right);
+            TreeDelete(n->left);
+            TreeDelete(n->right);
+            n->left = tmp;
+            n->right = _MUL(tmp1, tmp2);
+            (*pcount) += 1;
+        }
+        else if (n->left->type == NUMBER && n->right->type == NUMBER && n->right->value > 0)
         {
             n->type = NUMBER;
             n->value = pow(n->left->value, n->right->value);
@@ -777,7 +790,6 @@ void TreeSimplification(struct Node * n, int * pcount)
             n->right = NULL;
             (*pcount) += 1;
         }
-
     }
     else if (n->type == OPERATOR && n->value == SINUS)
     {
@@ -868,7 +880,9 @@ void TreePrintExpression(struct Node * n, FILE * output)
         {
 
             TreePrintExpression(n->left, output);
-            fprintf(output, " + ");
+            if (n->left->type == NUMBER && n->right->type == OPERATOR && n->right->value == DIVIDE && n->right->left->type == NUMBER && n->right->right->type == NUMBER);
+            else
+                fprintf(output, " + ");
             TreePrintExpression(n->right, output);
         }
         if (n->value == MINUS)
@@ -925,7 +939,7 @@ void TreePrintExpression(struct Node * n, FILE * output)
         }
         if (n->value == EXPONENT)
         {
-            if (n->left->type == OPERATOR && (n->left->value == PLUS || n->left->value == MINUS || n->left->value == MUL || n->left->value == DIVIDE))
+            if (n->left->type == OPERATOR && (n->left->value == PLUS || n->left->value == MINUS || n->left->value == MUL || n->left->value == DIVIDE || n->left->value == EXPONENT))
             {
                 fprintf(output, "\\left(");
                 TreePrintExpression(n->left,output);

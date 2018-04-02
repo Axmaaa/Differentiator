@@ -21,7 +21,6 @@
 
 int main()
 {
-    printf("lalka\n");
     FILE * result, * input;
     struct Node * tree, * tree_simple, * der, * der_simple;
     char * cap = "\\documentclass[12pt]{article}\n\\usepackage{ucs}\n\\usepackage[utf8x]{inputenc}\n\\usepackage[english,russian]{babel}\n\\pagestyle{empty}\n\\usepackage{amsmath}\n\n\\begin{document}\n";
@@ -56,6 +55,7 @@ int main()
     fprintf(result, "%s", cap);
     input = fopen("input.txt", "r");
     fgets(expression, 100, input);
+    fscanf(input, "%c", &mainvar);
     tree = GetG0();
     fclose(input);
     TreeValidation(tree);
@@ -66,11 +66,12 @@ int main()
     TreePrintTex(tree_simple, result);
     der = TreeDiff(tree, result);
     TreeValidation(der);
-    TreePrintDot(der);
     der_simple = TreeCopy(der);
     TreeOptimization(der_simple);
     //TreePrintDot(tree);
+    TreePrintDot(tree_simple);
     //TreePrintDot(der);
+    //TreePrintDot(der_simple);
 
 
     fprintf(result, "Итак, производная равна\n  ");
